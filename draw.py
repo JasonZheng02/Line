@@ -1,9 +1,9 @@
 from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
-    dx = x1 - x0
-    dy = y1 - y0
-    D = 2*dy - dx
+    A = y1 - y0
+    B = (x1 - x0) * -1
+    D = 2*A + B
     x = x0
     y = y0
 
@@ -11,6 +11,6 @@ def draw_line( x0, y0, x1, y1, screen, color ):
         plot(screen, color, x, y)
         if (D > 0):
                y = y + 1
-               D = D - 2*dx
+               D = D + 2 * B
         x = x + 1
-        D = D + 2*dy
+        D = D + 2 * A
