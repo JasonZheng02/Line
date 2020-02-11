@@ -1,10 +1,10 @@
 from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
-    int(x0)
-    int(y0)
-    int(x1)
-    int(y1)
+    x0 = int(x0)
+    y0 = int(y0)
+    x1 = int(x1)
+    y1 = int(y1)
     print(x0, y0, x1, y1)
     if (x0 > x1):
         x0, x1 = x1, x0
