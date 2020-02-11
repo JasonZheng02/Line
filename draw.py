@@ -40,5 +40,5 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             if (D > 0):
                 x = x + 1
                 D = D + 2 * A
-            y = y + 1
+            y = y - 1
             D = D + 2 * B
