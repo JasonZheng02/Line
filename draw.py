@@ -6,6 +6,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     x = x0
     y = y0
     slope = (A / B) * -1
+    print(slope)
 
     if (slope <= 1 and slope > 0):
         D = 2*A + B
