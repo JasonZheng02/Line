@@ -1,6 +1,7 @@
 from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
+    print(x0, y0, x1, y1)
     if (x0 > x1):
         x0, x1 = x1, x0
     if (y0 > y1):
@@ -10,7 +11,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     x = x0
     y = y0
     slope = (A / B) * -1
-    print(slope)
+    print(x0, y0, x1, y1)
 
     if (slope <= 1 and slope > 0):
         D = 2*A + B
