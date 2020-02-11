@@ -3,10 +3,8 @@ from display import *
 def draw_line( x0, y0, x1, y1, screen, color ):
     x0, y0, x1, y1 = int(x0), int(y0), int(x1), int(y1)
     print(x0,y0,x1,y1)
-    if (x0 > x1):
-        x0, x1 = x1, x0
-    if (y0 > y1):
-        y0, y1 = y1, y0
+    if (x0 > x1 and y0 > y1):
+        x0, x1, y0, y1 = x1, x0, y1, y0
     A = y1 - y0
     B = (x1 - x0) * -1
     x = x0
