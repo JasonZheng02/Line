@@ -7,7 +7,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     y = y0
     slope = (A / B) * -1
 
-    if (slope < 1 && slope > 0):
+    if (slope < 1 and slope > 0):
         D = 2*A + B
         while (x<= x1):
             plot(screen, color, x, y)
