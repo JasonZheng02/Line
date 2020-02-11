@@ -34,7 +34,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             D = D + 2 * B
 
     elif (slope < -1):
-        D = A - 2 * B
+        D = A + 2 * B
         while (y >= y1):
             plot(screen, color, x, y)
             if (D > 0):
@@ -44,11 +44,11 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             D = D - 2 * B
 
     else:
-        D = 2 * A - B
-        while (x <= x1):
+        D = 2 * A + B
+        while (x >= x1):
             plot(screen, color, x, y)
             if (D < 0):
-                y = y - 1
+                y = y + 1
                 D = D - 2 * B
-            x = x + 1
-            D = D + 2 * A
+            x = x - 1
+            D = D - 2 * A
