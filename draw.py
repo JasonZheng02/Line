@@ -15,7 +15,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
                 plot(screen, color, x, y)
                 x = x + 1
             slope = (A / B) * -1
-        else
+        else:
             while (y <= y1):
                 plot(screen, color, x, y)
                 y = y + 1
